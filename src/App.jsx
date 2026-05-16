@@ -1,6 +1,11 @@
 import { useEffect } from 'react';
 
 export default function App() {
+  // 🔗 PASTE YOUR DISCORD INVITE LINKS INSIDE THESE QUOTES:
+  const MAIN_SERVER_LINK = "https://discord.gg/YOUR_MAIN_SERVER_CODE";
+  const LAPD_SERVER_LINK = "https://discord.gg/YOUR_LAPD_CODE";
+  const LASD_SERVER_LINK = "https://discord.gg/YOUR_LASD_CODE";
+
   useEffect(() => {
     if (window.location.hostname === 'localhost') return;
 
@@ -48,9 +53,22 @@ export default function App() {
         <p className="text-zinc-400 text-base sm:text-lg mb-6 max-w-md mx-auto">
           Welcome to the official municipal portal for the Board of Commissioners and Executive Office.
         </p>
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-800/80 text-xs sm:text-sm text-zinc-300 border border-zinc-700 mb-8">
-          <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
-          Systems Operational
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-zinc-800/80 text-xs sm:text-sm text-zinc-300 border border-zinc-700">
+            <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+            Systems Operational
+          </div>
+          
+          {/* Main Server Link Button */}
+          <a 
+            href={MAIN_SERVER_LINK}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#C5A021] text-xs sm:text-sm text-black font-bold hover:bg-[#b08e1b] transition"
+          >
+            Join Main Server
+          </a>
         </div>
 
         {/* Divider Line */}
@@ -88,7 +106,9 @@ export default function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
             {/* LAPD Link & Logo */}
             <a 
-              href="#" 
+              href={LAPD_SERVER_LINK}
+              target="_blank"
+              rel="noreferrer"
               className="p-4 rounded-md bg-zinc-900/80 border border-zinc-800 hover:border-[#C5A021] transition group flex flex-col items-center"
             >
               <img 
@@ -102,7 +122,9 @@ export default function App() {
 
             {/* LASD Link & Logo */}
             <a 
-              href="#" 
+              href={LASD_SERVER_LINK}
+              target="_blank"
+              rel="noreferrer"
               className="p-4 rounded-md bg-zinc-900/80 border border-zinc-800 hover:border-[#C5A021] transition group flex flex-col items-center"
             >
               <img 
