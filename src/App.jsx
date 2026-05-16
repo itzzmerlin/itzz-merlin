@@ -35,9 +35,9 @@ export default function App() {
         {/* Mayor's Office Logo */}
         <div className="flex justify-center mb-6">
           <img 
-            src="https://via.placeholder.com/120" // <-- REPLACE WITH MAYOR LOGO LINK
+            src="/LACitySeal_Large.png" 
             alt="Mayor's Office Logo" 
-            className="w-28 h-28 object-contain rounded-full border-2 border-[#C5A021] p-1 bg-zinc-900"
+            className="w-28 h-28 object-contain rounded-full border-2 border-[#C5A021] p-1 bg-white"
           />
         </div>
 
@@ -92,7 +92,7 @@ export default function App() {
               className="p-4 rounded-md bg-zinc-900/80 border border-zinc-800 hover:border-[#C5A021] transition group flex flex-col items-center"
             >
               <img 
-                src="https://via.placeholder.com/60" // <-- REPLACE WITH LAPD LOGO LINK
+                src="/LAPD.png" 
                 alt="LAPD Logo" 
                 className="w-16 h-16 object-contain mb-3"
               />
@@ -106,7 +106,7 @@ export default function App() {
               className="p-4 rounded-md bg-zinc-900/80 border border-zinc-800 hover:border-[#C5A021] transition group flex flex-col items-center"
             >
               <img 
-                src="https://via.placeholder.com/60" // <-- REPLACE WITH LASD LOGO LINK
+                src="/LASD.webp" 
                 alt="LASD Logo" 
                 className="w-16 h-16 object-contain mb-3"
               />
