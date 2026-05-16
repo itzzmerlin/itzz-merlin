@@ -4,6 +4,9 @@ if (!url) {
   process.exit(0);
 }
 
+// Get the actual commit message from Vercel's system environment variables
+const commitMessage = process.env.VERCEL_GIT_COMMIT_MESSAGE || "Manual redeploy / No message available";
+
 const data = {
   embeds: [{
     title: "🚀 System Update Deployed",
@@ -12,6 +15,7 @@ const data = {
     fields: [
       { name: "Lead Developer", value: "`itzz JB`", inline: true },
       { name: "Environment", value: "`Production`", inline: true },
+      { name: "Commit Message", value: `\`\`\`${commitMessage}\`\`\``, inline: false }
     ],
     footer: { text: "ITZZ Systems • Automated Infrastructure Logs" },
     timestamp: new Date().toISOString()
