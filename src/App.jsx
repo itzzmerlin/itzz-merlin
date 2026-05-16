@@ -327,7 +327,7 @@ export default function App() {
               <span className="dept-sub">Police Department</span>
             </a>
             <a href={LASD_SERVER_LINK} target="_blank" rel="noreferrer" className="dept-card">
-              <img src="/LASD.png" alt="LASD Logo" className="dept-logo" />
+              <img src="/LASD.webp" alt="LASD Logo" className="dept-logo" />
               <span className="dept-name">LASD</span>
               <span className="dept-sub">Sheriff's Department</span>
             </a>
