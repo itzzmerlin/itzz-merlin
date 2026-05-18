@@ -170,10 +170,10 @@ export default function App() {
               [ ESCAPE_PORTAL ]
             </button>
 
-            {/* FBI Logo Placement */}
+            {/* Casing Fixed here to FBI.png */}
             <div className="flex justify-center mb-4">
               <img 
-                src="/fbi.png" 
+                src="/FBI.png" 
                 alt="FBI Seal" 
                 className="w-24 h-24 object-contain filter grayscale brightness-200"
               />
