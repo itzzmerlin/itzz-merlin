@@ -16,35 +16,25 @@ export default function Portfolio() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Generates the nodes for the interactive grid background seen in your video
-  const InteractiveGrid = () => (
-    <div className="grid grid-cols-12 gap-1 p-2 w-full opacity-20">
-      {Array.from({ length: 48 }).map((_, i) => (
-        <div 
-          key={i} 
-          className={`h-2 w-2 rounded-sm transition-all duration-300 mx-auto
-            ${isDarkMode ? 'bg-neutral-700 hover:bg-neutral-400 hover:scale-125' : 'bg-neutral-300 hover:bg-neutral-600 hover:scale-125'}`}
-        />
-      ))}
-    </div>
-  );
-
   return (
     <div className={`font-sans antialiased min-h-screen relative pb-32 transition-colors duration-300 selection:bg-neutral-800
       ${isDarkMode ? 'bg-[#121212] text-[#A3A3A3]' : 'bg-[#FAFAFA] text-[#525252]'}`}
     >
-      {/* Top Interactive Pixel Pattern */}
-      <div className="w-full max-w-md mx-auto pt-4 pointer-events-auto">
-        <InteractiveGrid />
-      </div>
+      {/* Top Authentic Dot Matrix Grid */}
+      <div className="absolute top-0 inset-x-0 h-28 pointer-events-none opacity-40 mix-blend-screen"
+        style={{
+          backgroundImage: `radial-gradient(circle, ${isDarkMode ? '#2c2c2c' : '#d4d4d4'} 2px, transparent 3px)`,
+          backgroundSize: '14px 14px'
+        }}
+      />
 
       {/* Main Content Body */}
-      <div className="max-w-md mx-auto px-6 pt-8 space-y-10 relative z-10">
+      <div className="max-w-md mx-auto px-6 pt-16 space-y-10 relative z-10">
         
         {/* Header Section */}
         <div className="space-y-5">
-          <div className="w-24 h-24 rounded-full overflow-hidden border bg-neutral-900 shadow-md transition-colors
-            ${isDarkMode ? 'border-neutral-800' : 'border-neutral-200'}"
+          <div className={`w-24 h-24 rounded-full overflow-hidden border bg-neutral-900 shadow-md transition-colors
+            ${isDarkMode ? 'border-neutral-800' : 'border-neutral-200'}`}
           >
             <img 
               src="JB.png" 
@@ -119,10 +109,13 @@ export default function Portfolio() {
         </div>
       </div>
 
-      {/* Bottom Interactive Pixel Pattern */}
-      <div className="w-full max-w-md mx-auto pt-10 pb-6 pointer-events-auto">
-        <InteractiveGrid />
-      </div>
+      {/* Bottom Authentic Dot Matrix Grid */}
+      <div className="absolute bottom-24 inset-x-0 h-28 pointer-events-none opacity-40 mix-blend-screen"
+        style={{
+          backgroundImage: `radial-gradient(circle, ${isDarkMode ? '#2c2c2c' : '#d4d4d4'} 2px, transparent 3px)`,
+          backgroundSize: '14px 14px'
+        }}
+      />
 
       {/* Floating Application Dock */}
       <div className="fixed bottom-6 inset-x-0 flex justify-center z-50 px-4">
