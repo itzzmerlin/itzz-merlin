@@ -333,5 +333,3 @@ export default function Portfolio() {
   );
 }
 
-
-Make the SKILLS PARTS BENEATH THE EXPERIENCE PART AND MAKE THE SKILLS PART LIKE THIS ANIMATED. 
