@@ -4,7 +4,7 @@ export default function Portfolio() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   const experiences = [
-    { company: "JB Productions", role: "Chief Foundership", period: "Present", icon: "🎬" },
+    { company: "Merlin Productions", role: "Chief Foundership", period: "Present", icon: "🎬" },
     { company: "NetSentra", role: "Server Staff Lead", period: "Present", icon: "🛠️" },
     { company: "JJC Gaming", role: "Production Team", period: "Present", icon: "🎮" },
     { company: "BlueLine Productions", role: "Marketing & Visuals", period: "Present", icon: "📈" },
