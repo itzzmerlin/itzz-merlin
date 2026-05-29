@@ -239,7 +239,7 @@ export default function Portfolio() {
           </a>
 
           <a
-            href="https://github.com/JBlizz"
+            href="https://github.com/itzzmerlin"
             target="_blank"
             rel="noreferrer"
             className={`transition-all p-2 rounded-full border flex items-center justify-center w-9 h-9
