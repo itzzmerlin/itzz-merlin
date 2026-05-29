@@ -5,7 +5,8 @@ export default function Portfolio() {
 
   const experiences = [
     { company: "Merlin Productions", role: "Chief Foundership", period: "Present", icon: "🎬" },
-    { company: "NetSentra", role: "Server Staff Lead", period: "Present", icon: "🛠️" },
+    { company: "Greater Manchester Roleplay", role: "Trainee Moderator", period: "Present", icon: "🇬🇧" },
+    { company: "NetSentra", role: "QA Tester & Server Staff Lead", period: "Present", icon: "🛠️" },
     { company: "JJC Gaming", role: "Production Team", period: "Present", icon: "🎮" },
     { company: "BlueLine Productions", role: "Marketing & Visuals", period: "Present", icon: "📈" },
     { company: "Colorado State Roleplay", role: "Developer & Staff", period: "Present", icon: "🌲" },
